@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>My Portfolio</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/cover.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/saes/sae102/data/img/favicon_img.png" sizes="32x32" type="image/png">
+
+</head>
+
+<body class="d-flex h-100 text-left text-white color">
+
+<div class="language-selector mt-3 text-center">
+    <label for="custom-content"></label><select id="custom-content" class="languages-section" style="width: auto;">
+    <option value="fr">Français 🇫🇷</option>
+    <option value="en">English 🇬🇧</option>
+    <option value="ar">العربية 🇸🇦</option>
+    <option value="es">Español 🇪🇸</option>
+    <option value="de">Deutsch 🇩🇪</option>
+</select>
+</div>
+
+<video autoplay loop muted playsinline class="back-vid">
+    <source src="/saes/sae102/data/img/background.mp4" type="video/mp4">
+</video>
+
+<section id="custom-content" class="audio-section">
+    <span id="music-status">Désactiver la musique</span>
+    <div class="audio-controls">
+        <audio id="ambientAudio" autoplay loop>
+            <source src="../saes/sae102/data/download/ambient.mp3" type="audio/mpeg" />
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8.697l-6.363 3.692A.5.5 0 0 1 4 12.015V3.985a.5.5 0 0 1 .441-.494l6.363 3.692a.5.5 0 0 1 0 .838z"/>
+        </svg>
+        <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+            <path d="M5.5 3.5A.5.5 0 0 1 6 4v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+    </div>
+</section>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div class="my-5">
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link" href="../index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                </svg></a>
+                <a class="nav-link" href="../cv/a-propos.html">About <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                </svg></a>
+                <a class="nav-link active" aria-current="page" href="../cv/cv.html">Resume <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                </svg></a>
+                <a class="nav-link" href="../saes/saes.html">SAE <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                    <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                    <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                </svg></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <figure class="profile-header">
+        <h1> <img src="../saes/sae102/data/img/Me%20copy.jpg" alt="Aymene WAHBI" width="80"> Aymene WAHBI</h1>
+    </figure>
+    <div class="Competence">
+        <header class="entete my-4">
+            <h2  id ="MyPortfolio"> Présentation :</h2>
+            <p id="presentationText1">Je suis un étudiant en <abbr title="Bachelor Universitaire de Technologie">BUT</abbr> <abbr title="Réseaux et Télécommunication">RT</abbr> à l'<abbr title="Institut Universitaire de Technologie"> IUT</abbr>1 de Grenoble, spécialisé en développement web et architecture réseau.</p>
+            <p id="presentationText2">Animé par la curiosité et le désir d'apprendre, je m'engage dans des projets académiques et personnels pour affûter mes compétences. Axé sur le développement web et l'architecture réseau, je vise à créer des systèmes évolutifs et efficaces. Avec le rôle croissant des plateformes numériques, je suis impatient de contribuer à ce domaine dynamique.</p>
+        </header>
+    </div>
+
+    <div class="Competence">
+        <section>
+            <h2 id="Skills">🧠 Compétences</h2>
+            <div class="skills">
+                <ul class="skills1" id="skills1-content">
+                    <li>🖥️ <em>Systèmes</em> : Linux, Windows, macOS</li>
+                    <li>🛜 <em>Réseaux</em> : adressage IP, routage, VLAN</li>
+                    <li>🌐 <em>Web</em> : HTML, CSS, Flask</li>
+                    <li>📜 <em>Scripts</em> : Python, Bash</li>
+                    <li>🗄️ <em>Virtualisation</em> : VirtualBox, UTM, OpenStack</li>
+                    <li>🔧 <em>Outils</em> : Wireshark, FileZilla, VS Code</li>
+                </ul>
+                <ul class="skills2" id="skills2-content">
+                    <li>🛠️ Administrer un réseau (Cisco Packet Tracer)</li>
+                    <li>🔌 Installer des câbles RJ45</li>
+                    <li>🗃️ Installer une armoire réseau</li>
+                    <li>🌐 Initier un réseau</li>
+                    <li>⚡ Monter un circuit</li>
+                    <li>📊 Gérer un projet avec Gantt</li>
+                    <li>🎨 <a id="Affiche" href="/saes/sae102/data/download/Affiche.png" target="_blank">Concevoir des affiches</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="soft-skills">
+        <h2 id="formation">🎓 Formation</h2>
+        <ul>
+            <li><strong>2023-2024 – Baccalauréat Générale</strong>
+                <p>Ecole Internationale de Tunis – Jardin de Carthage </p>
+                <p><i><b>Spécialités</b></i> : <em>Mathématiques</em> et <em><abbr title="Numérique et sciences informatiques">NSI</abbr></em></p>
+            </li>
+            <li><strong>2024 – En cours – <abbr title="Bachelor Universitaire de Technologie">BUT</abbr> <abbr title="Réseaux et Télécommunication">RT</abbr></strong>
+                <p>IUT1 de Grenoble – 151 rue de la Papeterie, 38400 Saint-Martin-d’Hères</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="Experience">
+        <section>
+            <h2 id="experiencepro" class="section-title">💼 Expérience professionnelle</h2>
+            <div>
+                <h5>🛠️ Installation et réparation de machines</h5>
+                <h6>Aymar Service | Juin 2022 - Juillet 2024</h6>
+                <h6 id="missions3"><b>Missions :</b></h6>
+                <ol>
+                    <li>🔧 Monter et démonter du matériel informatique</li>
+                    <li>🩺 Diagnostiquer des pannes</li>
+                    <li>💾 Installer des systèmes d’exploitation</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+
+    <div class="Skillls">
+        <h2 id="lang">🗣️ Langues</h2>
+        <div class="languages-container">
+            <div class="languages">
+                <p id="level1"><strong id="level">💬 Je parle couramment :</strong></p>
+                <ul>
+                    <li>🇬🇧/🇺🇸 Anglais</li>
+                    <li>🇦🇪 Arabe</li>
+                    <li>🇫🇷 Français</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <p id="level2"><strong>📚 En train d'apprendre :</strong></p>
+                <ul>
+                    <li>🇪🇸 Espagnol</li>
+                    <li>🇩🇪 Allemand</li>
+                    <li>🇮🇱 Hébreu</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <p id="level3"><strong>🎯 Je veux apprendre :</strong></p>
+                <ul>
+                    <li>🇹🇷 Turc</li>
+                    <li>🇨🇳 Chinois</li>
+                    <li>🇷🇺 Russe</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="hobbies">
+        <h2 id="hobbie">🌟 Mes Centres d'intérêts </h2>
+        <ul>
+            <li><strong>Football</strong>
+                <p>J'ai participé à plusieurs événements de football et j'ai joué à ce sport pendant 4 ans.</p>
+            </li>
+            <li><strong>Basketball</strong>
+                <p>J'ai pratiqué le basketball pendant deux ans et j'ai organisé plusieurs événements, à la fois au sein de l'école et à l'extérieur.</p>
+            </li>
+            <li><strong>Taekwondo</strong>
+                <p>J'ai participé à plusieurs événements de Taekwondo et j'ai pratiqué ce sport pendant 5 ans.</p>
+            </li>
+            <li><strong>Les échecs</strong>
+                <p>J'ai été membre d'un club d'échecs pendant deux ans et j'ai organisé plusieurs événements, à la fois au sein de l'école et à l'extérieur.</p>
+            </li>
+            <li><strong>Voyager</strong>
+                <p>J'adore voyager et explorer de nouveaux pays et cultures. La diversité des traditions et la culture culinaire me fascinent.</p>
+            </li>
+            <li><strong>Piano</strong>
+                <p>Jouer du piano me permet d'exprimer mes émotions et ma créativité. C'est un défi constant qui apporte équilibre et inspiration à ma vie.</p>
+            </li>
+            <li><strong>Cuisiné</strong>
+                <p>La cuisine me permet d'exprimer ma créativité et d'explorer de nouvelles saveurs, enrichissant ainsi mes compétences culinaires.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="soft-skills">
+        <h2 id="generalskills">💎 Mes compétences générales</h2>
+        <ul>
+            <li><strong>📅 Ponctualité</strong>
+                <p>La gestion du temps est très importante pour moi, et je donne toujours la priorité à la ponctualité.</p>
+            </li> <li><strong>💬 Communication</strong>
+            <p>Essentielle en travail d’équipe pour assurer la réussite collective.</p>
+        </li>
+            <li><strong>🎨 Créativité</strong>
+                <p> La créativité m'aide à générer des idées innovantes et à trouver des approches uniques aux défis.</p>
+            </li>
+            <li><strong>🧩 Analyse et résolution de problèmes</strong>
+                <p>Capacité à comprendre rapidement et à résoudre efficacement des situations complexes.</p>
+            </li>
+        </ul>
+    </div>
+
+    <section class="container py-2">
+        <h2 class="mt-4" id="contactsss">Voici mes contacts <svg id="Contact" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+        </svg></h2>
+        <h4>Si vous appréciez mon profil et souhaitez me connaître personnellement, voici mes coordonnées.</h4>
+
+        <div class="soft-skills mt-4">
+            <h3>📫 Contact Me</h3>
+            <ul class="contacts-list">
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <p class="contact-title">Email <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+                            <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882zM15 7.383l-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765z"/>
+                        </svg>
+                        </p>
+                        <a href="mailto:aymenewahbi006@gmail.com" id="Affiche">aymenewahbi006@gmail.com</a> <br>
+                        <a href="mailto:aymene.wahbi@etu.univ-grenoble-alpes.fr" id="Affiche">aymene.wahbi@etu.univ-grenoble-alpes.fr</a>
+                    </div>
+                </li>
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <p class="contact-title">Téléphone <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg></p>
+                        <a href="tel:+33766204146" id="Affiche">+33 7 66 20 41 46</a>
+                    </div>
+                </li>
+
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <p class="contact-title">Localisation <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-houses" viewBox="0 0 16 16">
+                            <path d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z"/>
+                        </svg>
+                        </p>
+                        <address><a href="https://maps.app.goo.gl/KH1YJwb3n9grnHpQ8" id="Affiche">Grenoble, France</a></address>
+                    </div>
+                </li>
+
+            <div class="resume-download">
+                <p>Vous pouvez télécharger mon CV ici :</p>
+                <a id="Dresume" href="/saes/sae102/data/download/CV_Aymene_WAHBI.pdf" target="_blank" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1z"/>
+                        <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
+                    </svg> Mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <nav class="resume-download" id="resume_install" aria-label="Pagination">
+        <div>
+            <a class="btn btn-outline-primary" href="../cv/a-propos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg> Précédent</a>
+            <a class="btn btn-outline-primary" href="../saes/saes.html">Suivant
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg></a>
+        </div>
+        <a class="btn btn-outline-primary" id="back_top" href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <i class="fas fa-arrow-up"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+            </svg> Back to top
+        </a>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="mt-auto text-white-50">
+        <p>&copy; 2024–2025 </p>
+    </footer>
+    <script src="/Javascript/script.js"></script>
+    <script src="/Javascript/lang_Zoom_in.js"></script>
+</body>
+</html>
