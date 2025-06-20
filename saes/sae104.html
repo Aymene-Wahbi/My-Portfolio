@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="/saes/sae102/data/img/favicon_img.png" sizes="32x32" type="image/png">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/cover.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center text-white color">
+
+<div class="language-selector mt-3 text-center">
+    <label for="custom-content"></label><select id="custom-content" class="languages-section" style="width: auto;">
+    <option value="fr">Français 🇫🇷</option>
+    <option value="en">English 🇬🇧</option>
+    <option value="ar">العربية 🇸🇦</option>
+    <option value="es">Español 🇪🇸</option>
+    <option value="de">Deutsch 🇩🇪</option>
+</select>
+</div>
+
+<video autoplay loop muted playsinline class="back-vid">
+    <source src="/saes/sae102/data/img/background.mp4" type="video/mp4">
+</video>
+
+<section id="custom-content" class="audio-section">
+    <span id="music-status">Désactiver la musique</span>
+    <div class="audio-controls">
+        <audio id="ambientAudio" autoplay loop>
+            <source src="/saes/sae102/data/download/ambient.mp3" type="audio/mpeg" />
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8.697l-6.363 3.692A.5.5 0 0 1 4 12.015V3.985a.5.5 0 0 1 .441-.494l6.363 3.692a.5.5 0 0 1 0 .838z"/>
+        </svg>
+        <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pause" viewBox="0 0 16 16">
+            <path d="M5.5 3.5A.5.5 0 0 1 6 4v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5zm5 0a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+    </div>
+</section>
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 id="MyPortfolio" class="float-md-start mb-0">My Portfolio</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link" href="../index.html">Accueil
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg></a>
+                <a class="nav-link" href="../cv/a-propos.html">À propos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg></a>
+                <a class="nav-link" href="../cv/cv.html">CV
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                        <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                        <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                    </svg></a>
+                <a class="nav-link active" aria-current="page" href="../saes/saes.html">SAE104 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                    <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                    <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                </svg></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <header>
+            <h2 class="my-4">🧑‍💻 SAE104 – Création de mon site Web professionnel</h2>
+            <div class="Experience" id="missions2">
+            <p class="px-3">
+                Dans le cadre de la SAE104, j’ai conçu et développé un <em>site Web personnel</em> destiné à présenter mon parcours, mes projets et mes compétences de manière professionnelle.
+                Ce portfolio, codé intégralement en <em>HTML</em> et <em>CSS</em>, constitue un support numérique moderne et personnalisable, que je peux partager à des recruteurs ou enseignants.
+            </p>
+
+            <p class="px-3">
+                Ce projet m’a permis de travailler à la fois en autonomie et lors de séances encadrées. J’ai entièrement imaginé la structure du site, choisi son identité visuelle, puis implémenté chaque page tout en respectant les bonnes pratiques de développement Web. Le site est responsive et assure une navigation fluide, aussi bien sur ordinateur que sur mobile.
+            </p>
+            </div>
+
+        <div class="Experience">
+            <h3 class="px-3" id="missions2">📌 Contenu du site réalisé</h3>
+            <ul class="px-4" id="missions2">
+                <li>🏠 Une page d’accueil avec une présentation rapide et des liens vers les rubriques principales.</li>
+                <li>📄 Une page CV incluant un bouton de téléchargement en PDF.</li>
+                <li>🔍 Une page "Zoom sur" pour détailler un projet ou une expérience marquante.</li>
+                <li>🧩 Une section dédiée à plusieurs SAEs, illustrée et analysée selon les compétences développées.</li>
+            </ul>
+        </div>
+
+            <div class="Experience">
+            <h3 class="px-3">🧠 Compétences développées</h3>
+            <ul class="px-4" id="missions2">
+                <li>💡 Structuration d’un site complet en HTML/CSS avec mise en page claire et hiérarchisée.</li>
+                <li>🎯 Maîtrise du balisage sémantique pour l’accessibilité et le référencement.</li>
+                <li>🖱️ Intégration d’éléments interactifs simples : navigation par ancres, carrousel, boutons de téléchargement.</li>
+                <li>🧑‍🎨 Création d’une interface responsive et ergonomique, adaptée à tout type d’écran.</li>
+                <li>🚀 Mise en valeur de mes projets et de mon identité professionnelle à travers un support numérique unique.</li>
+            </ul></div>
+
+        <div class="Experience">
+            <h3 class="px-3">✨ Résultat : un portfolio à mon image, consultable en ligne</h3>
+            <p class="px-3">
+                Le portfolio que vous consultez actuellement est l’aboutissement de ce projet. Il reflète à la fois mes compétences techniques en HTML/CSS, mon sens de l’organisation de l’information, et mon souci du détail dans la présentation de mes réalisations.
+            </p>
+        </div>
+
+    </header>
+
+    <nav class="resume-download" id="resume_install" aria-label="Pagination">
+        <div>
+            <a class="btn btn-outline-primary" href="../saes/sae102.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg> Précédent</a>
+            <a class="btn btn-outline-primary" href="../saes/sae201.html">Suivant
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg></a>
+        </div>
+        <a class="btn btn-outline-primary" id="back_top" href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <i class="fas fa-arrow-up"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+            </svg> Back to top
+        </a>
+    </nav>
+
+    <footer class="mt-auto text-white-50">
+        <p>&copy; 2024–2025 </p>
+    </footer>
+</div>
+
+
+<script src="/Javascript/script.js"></script>
+<script src="/Javascript/lang_saes104.js"></script>
+</body>
+</html>
